@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Promedio de notas</title>
+    <base href=".">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="./assets/css/my.css" rel="stylesheet">
+     <script src="./assets/js/my.js"></script> 
+</head>
+
+<body>
+    <div class="container">
+        <div class="spacer20"></div>
+        <div class="row justify-content-center">
+            <div class="col-md-auto">
+                <h3>Informe de Notas</h3>
+            </div>
+        </div>
+        <div class="spacer20"></div>
+        <div class="row justify-content-center">
+            <div class="col-md-1">
+                <b>N°</b> 
+            </div>
+            <div class="col-md-5">
+                <b>Asignatura</b>
+            </div>
+            <div class="col-md-3">
+                <b>Nota</b>
+            </div>
+        </div>
+        <div class="spacer8"></div>
+        <div class="row justify-content-center">
+            <div class="col-md-1">
+                1
+            </div>
+            <div class="col-md-5">
+                Lenguaje y comunicación
+            </div>
+            <div class="col-md-3">
+                <input id="nota0" type="text" class="w-100">
+            </div>
+        </div>
+        <div class="spacer8"></div>
+        <div class="row justify-content-center">
+            <div class="col-md-1">
+                2
+            </div>
+            <div class="col-md-5">
+                Matemática
+            </div>
+            <div class="col-md-3">
+                <input id="nota1" type="text" class="w-100">
+            </div>
+        </div>
+        <div class="spacer8"></div>
+        <div class="row justify-content-center">
+            <div class="col-md-1">
+                3
+            </div>
+            <div class="col-md-5">
+                História
+            </div>
+            <div class="col-md-3">
+                <input id="nota2" type="text" class="w-100">
+            </div>
+        </div>
+        <div class="spacer8"></div>
+        <div class="row justify-content-center">
+            <div class="col-md-1">
+                4
+            </div>
+            <div class="col-md-5">
+                Ed. Física
+            </div>
+            <div class="col-md-3">
+                <input id="nota3" type="text" class="w-100">
+            </div>
+        </div>
+        <div class="spacer8"></div>
+        <div class="row justify-content-center">
+            <div class="col-md-1">
+                5
+            </div>
+            <div class="col-md-5">
+                Química
+            </div>
+            <div class="col-md-3">
+                <input id="nota4" type="text" class="w-100">
+            </div>
+        </div>
+        <div class="spacer8"></div>
+        <div class="row justify-content-center">
+            <div class="col-md-1">
+                6
+            </div>
+            <div class="col-md-5">
+                Arte
+            </div>
+            <div class="col-md-3">
+                <input id="nota5" type="text" class="w-100">
+            </div>
+        </div>
+        <div class="spacer8"></div>
+        <div class="row justify-content-center">
+            <div class="col-md-1">
+                7
+            </div>
+            <div class="col-md-5">
+                Música
+            </div>
+            <div class="col-md-3">
+                <input id="nota6" type="text" class="w-100">
+            </div>
+        </div>
+        <div class="spacer20"></div>
+        <div class="row justify-content-center">
+            <div class="col-md-1">
+
+            </div>
+            <div class="col-md-5">
+
+            </div>
+            <div class="col-md-3" >
+                <button type="button" class="btn btn-outline-primary w-100" onclick="ejecutaRutina()">Calcular <b>Promedio</button>
+            </div>
+        </div>
+        <div class="spacer20"></div>
+        <div class="row justify-content-center">
+            <div class="col-md-1">
+
+            </div>
+            <div class="col-md-5">
+
+            </div>
+            <div class="col-md-3" style="text-align: center;">
+                X.X
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+</html>
